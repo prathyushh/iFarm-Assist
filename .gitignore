@@ -32,4 +32,19 @@ mobile/*.jks
 mobile/*.keystore
 
 # --- Project Data ---
-# backend/data/*.pdf  <-- Uncomment if you want to keep PDFs private
+# backend/data/*.pdf  <-- User wants to KEEP data files
+
+# --- Documentation & Temporary Root Files (EXCLUDED) ---
+*.pdf
+*.md
+!README.md
+*.bat
+*.txt
+*.png
+*.jpeg
+*.jpg
+generate_*.py
+extract_pdf.py
+temp_*
+
+# --- Secrets (CRITICAL) ---
