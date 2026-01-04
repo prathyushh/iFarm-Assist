@@ -1,6 +1,5 @@
 # --- Secrets (CRITICAL) ---
 backend/.env
-mobile/.env
 .env
 *.key
 *.pem
@@ -23,8 +22,6 @@ __pycache__/
 *.tmp
 .DS_Store
 Thumbs.db
-error_log.txt
-benchmark_log.txt
 
 # --- Mobile (If not using nested gitignore) ---
 mobile/node_modules/
@@ -34,22 +31,15 @@ mobile/ios/
 mobile/*.jks
 mobile/*.keystore
 
-# --- Documentation & Reports (Exclude generated PDFs) ---
-*.pdf
-!data/*.pdf
-!backend/data/*.pdf
-*.md
-!README.md
-!requirements.txt
+# --- Project Data ---
+# backend/data/*.pdf  <-- Uncomment if you want to keep PDFs private
 
-# --- Temporary Scripts & Artifacts (Root Only) ---
-/*.py
-!backend/
-/*.bat
+# --- Documentation & Reports (Exclude from Git) ---
+Implementation_Plan.*
+iFarmAssist_*.pdf
+generate_*.py
+project_text.txt
+extract_pdf.py
+*.bat
 !setup_github.bat
 !update_knowledge.bat
-/*.txt
-!backend/requirements.txt
-!pdf_content.txt
-!project_text.txt
-
