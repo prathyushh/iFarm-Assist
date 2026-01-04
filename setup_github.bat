@@ -32,7 +32,7 @@ echo.
 echo OPTION B: Manual Way:
 echo    1. Go to github.com and create a new repository named "iFarmAssist"
 echo    2. Copy the URL (e.g., https://github.com/YourName/iFarmAssist.git)
-echo    3. Run: git remote add origin <PASTE_URL_HERE>
+echo    3. Run: git remote add origin ^<PASTE_URL_HERE^>
 echo    4. Run: git push -u origin master
 echo.
 pause
