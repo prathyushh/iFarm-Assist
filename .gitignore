@@ -1,5 +1,6 @@
 # --- Secrets (CRITICAL) ---
 backend/.env
+mobile/.env
 .env
 *.key
 *.pem
@@ -22,6 +23,8 @@ __pycache__/
 *.tmp
 .DS_Store
 Thumbs.db
+error_log.txt
+benchmark_log.txt
 
 # --- Mobile (If not using nested gitignore) ---
 mobile/node_modules/
@@ -31,20 +34,22 @@ mobile/ios/
 mobile/*.jks
 mobile/*.keystore
 
-# --- Project Data ---
-# backend/data/*.pdf  <-- User wants to KEEP data files
-
-# --- Documentation & Temporary Root Files (EXCLUDED) ---
+# --- Documentation & Reports (Exclude generated PDFs) ---
 *.pdf
+!data/*.pdf
+!backend/data/*.pdf
 *.md
 !README.md
-*.bat
-*.txt
-*.png
-*.jpeg
-*.jpg
-generate_*.py
-extract_pdf.py
-temp_*
+!requirements.txt
 
-# --- Secrets (CRITICAL) ---
+# --- Temporary Scripts & Artifacts (Root Only) ---
+/*.py
+!backend/
+/*.bat
+!setup_github.bat
+!update_knowledge.bat
+/*.txt
+!backend/requirements.txt
+!pdf_content.txt
+!project_text.txt
+
