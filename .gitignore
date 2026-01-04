@@ -1,0 +1,35 @@
+# --- Secrets (CRITICAL) ---
+backend/.env
+.env
+*.key
+*.pem
+
+# --- Databases (User Data / Heavy) ---
+*.db
+*.sqlite3
+backend/sql_app.db
+backend/chroma_db/
+
+# --- Virtual Environments (Dependencies) ---
+backend/venv/
+venv/
+ENV/
+
+# --- Compiled / Temporary Files ---
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+
+# --- Mobile (If not using nested gitignore) ---
+mobile/node_modules/
+mobile/.expo/
+mobile/android/
+mobile/ios/
+mobile/*.jks
+mobile/*.keystore
+
+# --- Project Data ---
+# backend/data/*.pdf  <-- Uncomment if you want to keep PDFs private
