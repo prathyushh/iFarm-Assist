@@ -43,3 +43,15 @@ extract_pdf.py
 *.bat
 !setup_github.bat
 !update_knowledge.bat
+
+# --- Junk / Temp Files ---
+RAG
+error_log.txt
+pdf_content.txt
+project_text.txt
+verify_phase3.bat
+*.jpg
+*.jpeg
+*.png
+temp_*
+projectphase1.pdf
